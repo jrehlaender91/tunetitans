@@ -1,0 +1,105 @@
+.eyebrow-with-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.eyebrow-logo {
+  height: 34px;
+  width: auto;
+}
+
+.hackathon-timeline {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 96px;
+}
+
+.hackathon-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 24px;
+  position: relative;
+}
+
+.hackathon-step-marker {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hackathon-step-marker span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-dim);
+  z-index: 1;
+}
+
+.hackathon-step:not(:last-child) .hackathon-step-marker::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: -32px;
+  left: 50%;
+  width: 1px;
+  background: var(--line);
+  transform: translateX(-50%);
+}
+
+.hackathon-step-body {
+  padding-bottom: 48px;
+}
+
+.hackathon-step-range {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  margin-bottom: 8px;
+}
+
+.hackathon-step-title {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.hackathon-step-desc {
+  color: var(--text-dim);
+  max-width: 560px;
+}
+
+.hackathon-prizes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.hackathon-prize-card {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hackathon-prize-place {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.hackathon-prize-name {
+  color: var(--text-dim);
+  font-weight: 600;
+}

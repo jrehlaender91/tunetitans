@@ -1,0 +1,18 @@
+.ghost-word {
+  position: absolute;
+  font-family: "Anton", sans-serif;
+  color: rgba(255, 255, 255, 0.035);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0;
+  line-height: 1;
+  user-select: none;
+}
+
+.ghost-left {
+  left: -2vw;
+}
+
+.ghost-right {
+  right: -2vw;
+}
