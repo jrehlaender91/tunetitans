@@ -102,8 +102,6 @@ export const hackathon = {
   title: "Hackathon",
   description: "Concurso de desarrollo y programación de herramientas y extensiones aplicables al ecosistema de Ableton Live.",
   timeline: [
-    { range: "25 ago — 11 sep", title: "Sube tus proyectos", description: "Sube tus proyectos para una o más categorías antes del 11 de septiembre." },
-    { range: "2 oct", title: "Reporte de finalistas", description: "Tu DP anunciará los 5 proyectos finalistas que viajarán a la gran final en el Campus Monterrey." },
     { range: "9 oct", title: "Registro", description: "Todos los alumnos se registran como participantes en la liga compartida por su DP de campus." },
     { range: "30 oct", title: "Límite de recepción de extensiones", description: "Fecha límite para enviar tu extensión o herramienta terminada." },
     { range: "14 nov", title: "Premiación", description: "Anuncio y entrega de premios durante la final en el Campus Monterrey." },
